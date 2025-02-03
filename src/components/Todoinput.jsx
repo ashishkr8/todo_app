@@ -29,10 +29,10 @@ const Todoinput = () => {
       setInput(prev=>"");
     }
   return (
-    <div>
-        <input type="text" onChange={handleTodoInput} value={input}/>
+    <div className=''>
+        <input type="text" onChange={handleTodoInput} value={input} className=''/>
      
-        <IoMdAdd onClick={handleAddTodo}/>
+        <IoMdAdd onClick={handleAddTodo} className='text-green-500'/>
       
     </div>
   )

@@ -12,12 +12,12 @@ const Todolist = () => {
        
     }
   return (
-    <div>
+    <div className="">
         {todolist.map(item=>
-            <div key={item.id}>
+            <div key={item.id} >
                 <p>{item.value}</p>
                 
-                <MdOutlineDeleteForever onClick={()=>handleDelete(item.id)}/>
+                <MdOutlineDeleteForever onClick={()=>handleDelete(item.id)} className='text-red-500'/>
             </div>
         )}
     </div>
