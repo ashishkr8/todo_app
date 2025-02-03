@@ -29,8 +29,8 @@ const Todoinput = () => {
       setInput(prev=>"");
     }
   return (
-    <div className=''>
-        <input type="text" onChange={handleTodoInput} value={input} className=''/>
+    <div className='flex flex-row items-center justify-center'>
+        <input type="text" onChange={handleTodoInput} value={input} className='bg-gray-200 p-1'/>
      
         <IoMdAdd onClick={handleAddTodo} className='text-green-500'/>
       
