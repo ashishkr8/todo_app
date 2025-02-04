@@ -23,8 +23,7 @@ const Todolist = () => {
         </p>
         {todolist.map(item=>
             <div key={item.id} className='flex flex-row items-center justify-between gap-2 p-2 mt-4 bg-gray-700 text-white'>
-                <p>{item.value}</p>
-                
+                <p>{item.value}</p>    
                 <MdOutlineDeleteForever onClick={()=>handleDelete(item.id)} className='text-red-500 hover:cursor-pointer'/>
             </div>
         )}
